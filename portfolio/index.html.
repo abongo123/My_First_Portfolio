@@ -1,1 +1,61 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steve - Personal Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Steve</h1>
+        <p>Creative Developer and Problem Solver</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>Hello! I'm Steve, a passionate developer with a love for building functional and visually appealing web applications.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <article class="project">
+            <h3>Project 1: Mental Health App</h3>
+            <p>A mobile app designed to promote mental health awareness and provide resources to users.</p>
+            <a href="https://github.com/yourusername/mental-health-app" target="_blank">View on GitHub</a>
+        </article>
+        <article class="project">
+            <h3>Project 2: Portfolio Website</h3>
+            <p>A clean and responsive personal portfolio website showcasing my skills and projects.</p>
+            <a href="https://yourportfolio.com" target="_blank">View Live</a>
+        </article>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I have a strong background in web development and journalism. My hobbies include exploring new technologies, mentoring others, and creative writing.</p>
+        <p>Skills:</p>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Front-End Frameworks (React)</li>
+            <li>Problem-Solving and Communication</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email me at: <a href="mailto:steve@example.com">steve@example.com</a></p>
+        <p>Find me on:</p>
+        <ul>
+            <li><a href="https://linkedin.com/in/steve" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/steve" target="_blank">GitHub</a></li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2024 Steve. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
