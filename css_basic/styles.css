@@ -1,29 +1,88 @@
 /* Ensure the body and main elements are flexible containers */
 body {
+/* Layout Rules */
+body {
     display: flex;
-    flex-direction: column; /* Stack children vertically */
+    flex-direction: column;
     margin: 0;
-    height: 100vh; /* Full viewport height for proper flexbox behavior */
+    height: 100vh;
 }
 
 main {
     display: flex;
-    flex-direction: row; /* Arrange children side by side */
-    flex: auto; /* Allow main to grow and shrink as needed */
+    flex-direction: row;
+    flex: auto;
 }
 
-/* Set proportions for the main children */
 article {
-    flex: 2; /* Takes 2/3 of the width */
-    overflow-y: auto; /* Enables vertical scrolling if content overflows */
+    flex: 2;
+    overflow-y: auto;
+    background-color: #f9f9f9; /* Light background for article */
+    padding: 1rem;
+    border-right: 1px solid #ccc; /* Divider between article and aside */
 }
 
 aside {
-    flex: 1; /* Takes 1/3 of the width */
-    overflow-y: auto; /* Enables vertical scrolling if content overflows */
+    flex: 1;
+    overflow-y: auto;
+    background-color: #e9ecef; /* Light gray background */
+    padding: 1rem;
 }
 
-/* Optional: Styling for header and footer */
-header, footer {
-    flex-shrink: 0; /* Ensure they do not shrink */
+/* Header and Footer */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem;
 }
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 1.5rem;
+    color: #ff9800; /* Bright orange for the logo */
+}
+
+/* Custom Styles for <article> Content */
+article h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+article p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column; /* Stacks article and aside vertically */
+    }
+    article, aside {
+        flex: none;
+    }
+}
+
